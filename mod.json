@@ -1,0 +1,63 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "*",
+		"android": "*",
+		"mac": "*",
+		"ios": "*"
+	},
+	"id": "yourname.hitbox-only",
+	"name": "Hitbox Only",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Hides everything in a level except the hitboxes. Press H in a level to toggle, press H in the main menu to configure.",
+	"tags": ["utility", "enhancement"],
+	"settings": {
+		"show-portals": {
+			"name": "Show Portals",
+			"description": "Draw hitboxes for portals.",
+			"type": "bool",
+			"default": true
+		},
+		"show-gameplay": {
+			"name": "Show Gameplay Objects",
+			"description": "Draw hitboxes for orbs, pads and coins.",
+			"type": "bool",
+			"default": true
+		},
+		"fill-opacity": {
+			"name": "Fill Opacity",
+			"description": "How strongly hitboxes are filled in (0 = outline only). Multiplied by each color's own alpha.",
+			"type": "float",
+			"default": 0.25,
+			"min": 0.0,
+			"max": 1.0,
+			"control": { "slider": true }
+		},
+		"player-color": {
+			"name": "Player Color / Opacity",
+			"type": "rgba",
+			"default": [0, 255, 100, 255]
+		},
+		"solid-color": {
+			"name": "Solid Color / Opacity",
+			"type": "rgba",
+			"default": [0, 120, 255, 255]
+		},
+		"hazard-color": {
+			"name": "Hazard Color / Opacity",
+			"type": "rgba",
+			"default": [255, 0, 0, 255]
+		},
+		"portal-color": {
+			"name": "Portal Color / Opacity",
+			"type": "rgba",
+			"default": [255, 170, 0, 255]
+		},
+		"gameplay-color": {
+			"name": "Gameplay Object Color / Opacity",
+			"type": "rgba",
+			"default": [255, 0, 255, 255]
+		}
+	}
+}
